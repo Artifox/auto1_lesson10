@@ -23,6 +23,10 @@ public class Lesson1HomeWork {
         System.out.println();
         System.out.println("Task5:");
         System.out.println(task5(-1000000000));
+
+        System.out.println();
+        System.out.println("Task6:");
+        System.out.println(task6(9991));
     }
 
 
@@ -101,7 +105,20 @@ public class Lesson1HomeWork {
             result = number + " - это положительное " + numberOfDigits + postfix + " значное число";
         }
         return result;
+    }
 
+    public static String task6(int numberOfProgrammers){
+        String numberOfProgrammersInString = String.valueOf(numberOfProgrammers);
+
+        if (numberOfProgrammersInString.substring(numberOfProgrammersInString.length() - 1).equals("1")){
+            return numberOfProgrammers + " программист";
+        } else if (numberOfProgrammersInString.substring(numberOfProgrammersInString.length() - 1).equals("2") ||
+                numberOfProgrammersInString.substring(numberOfProgrammersInString.length() - 1).equals("3") ||
+                numberOfProgrammersInString.substring(numberOfProgrammersInString.length() - 1).equals("4")){
+            return numberOfProgrammers + " программиста";
+        } else {
+            return numberOfProgrammers + " программистов";
+        }
     }
 
     static public class ResultSet {
