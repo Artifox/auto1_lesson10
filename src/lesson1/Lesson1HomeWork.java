@@ -26,7 +26,7 @@ public class Lesson1HomeWork {
 
         System.out.println();
         System.out.println("Task6:");
-        System.out.println(task6(9991));
+        System.out.println(task6(115));
     }
 
 
@@ -108,8 +108,19 @@ public class Lesson1HomeWork {
     }
 
     public static String task6(int numberOfProgrammers){
-        String numberOfProgrammersInString = String.valueOf(numberOfProgrammers);
 
+        if(numberOfProgrammers % 100 >= 10 && numberOfProgrammers % 100 <= 20){
+            return numberOfProgrammers + "программистов";
+        } else if (numberOfProgrammers % 10 == 1){
+            return numberOfProgrammers + "программист";
+        } else if(numberOfProgrammers % 10 >= 2 && numberOfProgrammers % 10 <= 4){
+            return numberOfProgrammers + "программиста";
+        } else {
+            return  numberOfProgrammers + "программистов";
+        }
+
+
+        /*String numberOfProgrammersInString = String.valueOf(numberOfProgrammers);
         if (numberOfProgrammersInString.substring(numberOfProgrammersInString.length() - 1).equals("1")){
             return numberOfProgrammers + " программист";
         } else if (numberOfProgrammersInString.substring(numberOfProgrammersInString.length() - 1).equals("2") ||
@@ -118,7 +129,7 @@ public class Lesson1HomeWork {
             return numberOfProgrammers + " программиста";
         } else {
             return numberOfProgrammers + " программистов";
-        }
+        }*/
     }
 
     static public class ResultSet {
