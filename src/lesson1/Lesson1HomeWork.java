@@ -26,7 +26,7 @@ public class Lesson1HomeWork {
 
         System.out.println();
         System.out.println("Task6:");
-        System.out.println(task6(115));
+        System.out.println(task6(0));
     }
 
 
