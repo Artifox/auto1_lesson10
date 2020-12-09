@@ -26,7 +26,7 @@ public class Lesson3HomeWork {
         System.out.println();
         System.out.println();
         System.out.println("Task6: ");
-        task6();
+        task6_2();
     }
 
     public static void task1() {
@@ -155,13 +155,13 @@ public class Lesson3HomeWork {
         for (int i = 0; i < array.length; i++) {
             array[i] = rnd.nextInt(11);
         }
-        //вопрос: почему при foreach outOfBound exection?
-        /*for (int el : array){
-            System.out.print(array[el]);
-        }*/
-        for (int i = 0; i < array.length; i++) {
-            System.out.print(array[i] + ", ");
+
+        for (int el : array){
+            System.out.print(el);
         }
+        /*for (int i = 0; i < array.length; i++) {
+            System.out.print(array[i] + ", ");
+        }*/
     }
 
     public static void task6(){
